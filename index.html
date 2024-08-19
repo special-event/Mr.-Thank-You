@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Event</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Stylish&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    
+    <style>
+      
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e0ffff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card {
+    background: linear-gradient(135deg, #98FF98, #B0E0E6);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 320px;
+    animation: bounceIn 1s ease-in-out;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.3);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.event-image {
+    width: 120px;
+    height: 120px;
+    border: 3px solid rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    margin-bottom: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.title {
+    color: #0000FF;
+    font-size: 24px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    margin-bottom: 5px;
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.subtitle {
+    color: #008000;
+    font-size: 25px;
+    font-family: "Stylish", sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: slideIn 1.2s ease-in-out;
+}
+
+.description {
+    color: #333333;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.claim-button {
+    background-color: #32CD32;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.claim-button:active {
+    background-color: #228B22;
+    transform: scale(0.9);
+}
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="img.jpg" alt="Event Image" class="event-image">
+            <h1 class="title">SPECIAL EVENT!</h1>
+            <p class="subtitle">You win $10,000</p>
+            <p class="description">Complete any one of the Offers below, and your Prize will unlock automatically!</p>
+            <a href="https://special-event.github.io/Event-Page/" class="claim-button">CLAIM NOW</a>
+        </div>
+    </div>
+</body>
+</html>
